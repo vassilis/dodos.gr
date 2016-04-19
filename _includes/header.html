@@ -5,7 +5,8 @@
 <header class="site-header">
 
   <div class="container">
-    <img src="/img/logo.svg">
+    <img src="{{ '/img/logo.svg' | prepend: site.baseurl }}">
+    {% include btn-menu.html %}
   </div>
 
 </header>

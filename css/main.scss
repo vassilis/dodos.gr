@@ -5,7 +5,7 @@
 
 @import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
 @import url("//fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=greek,latin");
-@import url("/vendor/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css");
+@import url("{{ '/vendor/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css' | prepend: site.baseurl }}");
 
 // Our variables
 $base-font-family: "Comfortaa", sans-serif;
@@ -66,39 +66,42 @@ body {
 }
 
 .site-header {
-  border-bottom: 2px #FFF solid;
+  border-bottom: 1px $grey-color-dark solid;
   .container {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url("/img/dodos-bg2.png") 100% 10px no-repeat;
+    // background: url("{{ '/img/dodos-bg2.png' | prepend: site.baseurl }}") 100% 10px no-repeat;
+  }
+}
+
+.btn-menu {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: $red-color;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px darken($background-color, 20%);
+  text-shadow: 0 1px 0 #333;
+  strong {
+    font-size: 2em;
+  }
+  small {
+    display: block;
+    font-size: .9em;
   }
 }
 
 .slides {
-  height: 450px;
-  background: url("/img/slides3.jpg") 50% 50% $grey-color-dark;
+  height: 500px;
+  background: url("{{ '/img/slides3.jpg' | prepend: site.baseurl }}") 50% 50% $grey-color-dark;
   background-size: cover;
   position: relative;
-  .btn-menu {
-    display: block;
-    text-align: center;
-    position: absolute;
-    top: -45px;
-    left: 50%;
-    background: $red-color;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: #FFF;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px #111;
-    strong {
-      font-size: 2em;
-    }
-    small {
-      display: block;
-      font-size: .9em;
-    }
-  }
 }
 
 .phones {
@@ -106,12 +109,24 @@ body {
   color: #FFF;
   font-size: 1.8em;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   line-height: 1;
+  border: $grey-color-dark solid;
+  border-width: 1px 0;
+  small {
+    display: block;
+    font-size: .6em;
+    margin-bottom: 15px;
+  }
+  .whatsup {
+    padding-left: 100px;
+    background: url("{{ '/img/cosmote-whatsup-logo.png' | prepend: site.baseurl }}") no-repeat;
+    background-size: auto 63px;
+  }
 }
 
 .newsletter-form {
-  padding: 30px;
+  padding: 50px;
   background: lighten($grey-color-dark, 20%); 
   color: #FFF;
   label {
