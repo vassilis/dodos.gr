@@ -3,31 +3,34 @@
 ---
 @charset "utf-8";
 
-
+@import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
+@import url("//fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=greek,latin");
+@import url("/vendor/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css");
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Comfortaa", sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$comp-font-family: "Ubuntu Condensed", sans-serif;
+
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background-color: #DBE3E2;
+$brand-color:      #C0281C;
+$red-color:        #C0281C;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: #1A1A1A;
 
 // Width of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -36,17 +39,92 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
 }
 
+.topbar {
+  background: $grey-color-dark; 
+  color: #FFF;
+  text-align: center;
+  padding: 5px;
+  font-family: $comp-font-family;
+  font-size: 1.1em;
+}
 
+.site-header {
+  border-bottom: 2px #FFF solid;
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("/img/dodos-bg2.png") 100% 10px no-repeat;
+  }
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.slides {
+  height: 450px;
+  background: url("/img/slides3.jpg") 50% 50% $grey-color-dark;
+  background-size: cover;
+  position: relative;
+  .btn-menu {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    background: $red-color;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #111;
+    strong {
+      font-size: 2em;
+    }
+    small {
+      display: block;
+      font-size: .9em;
+    }
+  }
+}
+
+.phones {
+  background: $red-color;
+  color: #FFF;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 15px;
+  line-height: 1;
+}
+
+.newsletter-form {
+  padding: 30px;
+  background: lighten($grey-color-dark, 20%); 
+  color: #FFF;
+  label {
+    font-weight: 700;
+  }
+}
+
+.thumbs {
+  background: $grey-color-dark;
+  padding: 50px 0 500px;
+  text-align: center;
+  img {
+    width: 250px;
+    margin: 20px;
+  }
+}
