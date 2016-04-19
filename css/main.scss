@@ -69,9 +69,14 @@ body {
   border-bottom: 1px $grey-color-dark solid;
   .container {
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 37px;
+    padding-bottom: 32px;
     // background: url("{{ '/img/dodos-bg2.png' | prepend: site.baseurl }}") 100% 10px no-repeat;
+  }
+  .tagline {
+    display: block;
+    margin-top: 10px;
+    font-size: .9em;
   }
 }
 
