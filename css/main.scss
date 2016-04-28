@@ -20,7 +20,7 @@ $spacing-unit:     30px;
 $text-color:       #FFF;
 $brand-color:      #C0281C;
 $red-color:        #C0281C;
-$grey-color:       #828282;
+$grey-color:       #4D4D4D;
 $grey-color-light: #DBE3E2;
 $grey-color-dark:  #1A1A1A;
 
@@ -92,6 +92,9 @@ body {
   border-radius: 10px;
   box-shadow: 0 3px 3px lighten($grey-color-dark, 40%);
   text-shadow: 0 1px 0 #333;
+  &:hover {
+    background: darken($red-color, 10%);
+  }
   strong {
     font-size: 2em;
   }
@@ -141,7 +144,7 @@ body {
 
 .newsletter-form {
   padding: 50px;
-  background: lighten($grey-color-dark, 20%); 
+  background: $grey-color; 
   color: #FFF;
   label {
     font-weight: 700;
@@ -173,5 +176,40 @@ body {
   }
   @media (max-width: 768px) {
     display: none;
+  }
+}
+
+.alert-info {
+  background: $grey-color;
+  border: 0;
+  color: #FFF;
+}
+
+.site-footer {
+  padding-bottom: 50px;
+}
+
+.pin {
+  width: 48px;
+}
+
+.social {
+  margin-top: 50px;
+  .btn {
+    background: $red-color;
+    border: 0;
+    margin: 0 10px;
+    padding: 10px 30px;
+    &:hover {
+      background: darken($red-color, 10%);
+    }
+  }
+}
+
+.shopilab {
+  font-size: .8em;
+  margin-top: 100px;
+  a {
+    color: #FFF !important;
   }
 }
