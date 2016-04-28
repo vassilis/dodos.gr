@@ -17,14 +17,12 @@ $comp-font-family: "Ubuntu Condensed", sans-serif;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #DBE3E2;
+$text-color:       #FFF;
 $brand-color:      #C0281C;
 $red-color:        #C0281C;
-
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: #1A1A1A;
+$grey-color-light: #DBE3E2;
+$grey-color-dark:  #1A1A1A;
 
 // Width of the content area
 $content-width:    800px;
@@ -52,7 +50,7 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background-color: $grey-color-dark;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -66,12 +64,13 @@ body {
 }
 
 .site-header {
+  background-color: $grey-color-light;
   border-bottom: 1px $grey-color-dark solid;
+  color: $grey-color-dark;
   .container {
     position: relative;
     padding-top: 37px;
     padding-bottom: 32px;
-    // background: url("{{ '/img/dodos-bg2.png' | prepend: site.baseurl }}") 100% 10px no-repeat;
   }
   .tagline {
     display: block;
@@ -91,7 +90,7 @@ body {
   cursor: pointer;
   color: #FFF;
   border-radius: 10px;
-  box-shadow: 0 3px 3px darken($background-color, 20%);
+  box-shadow: 0 3px 3px lighten($grey-color-dark, 40%);
   text-shadow: 0 1px 0 #333;
   strong {
     font-size: 2em;
@@ -139,12 +138,26 @@ body {
   }
 }
 
+.offers {
+  padding: 50px 0;
+  .offer {
+    margin: 50px 0 80px;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  dt {
+    font-size: 1.4em;
+  }
+  dd {
+    font-sise: 1.1em;
+  }
+}
+
 .thumbs {
-  background: $grey-color-dark;
-  padding: 50px 0 500px;
   text-align: center;
   img {
-    width: 250px;
+    max-width: 100%;
     margin: 20px;
   }
 }
