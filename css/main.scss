@@ -45,13 +45,13 @@ $on-laptop:        800px;
 
 
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $grey-color-dark;
-    -webkit-text-size-adjust: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $grey-color-dark;
+  -webkit-text-size-adjust: 100%;
 }
 
 .topbar {
@@ -99,6 +99,10 @@ body {
     display: block;
     font-size: .9em;
   }
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    position: static;
+  }
 }
 
 .slides {
@@ -106,6 +110,9 @@ body {
   background: url("{{ '/img/slides3.jpg' | prepend: site.baseurl }}") 50% 50% $grey-color-dark;
   background-size: cover;
   position: relative;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .phones {
@@ -126,6 +133,9 @@ body {
     padding-left: 100px;
     background: url("{{ '/img/cosmote-whatsup-logo.png' | prepend: site.baseurl }}") no-repeat;
     background-size: auto 63px;
+  }
+  @media (max-width: 768px) {
+    border-top-width: 0;
   }
 }
 
@@ -159,5 +169,8 @@ body {
   img {
     max-width: 100%;
     margin: 20px;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 }
