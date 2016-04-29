@@ -66,8 +66,9 @@ body {
   background-color: $grey-color-light;
   border-top: 3px $grey-color-dark solid;
   color: $grey-color-dark;
+  position: relative;
+  overflow: hidden;
   .container {
-    position: relative;
     padding-top: 37px;
     padding-bottom: 32px;
   }
@@ -75,6 +76,29 @@ body {
     display: block;
     margin-top: 10px;
     font-size: .9em;
+  }
+  &::after {
+    content: "";
+    display: block;
+    background: url("/img/193650.svg");
+    background-size: 100%;
+    width: 80px;
+    height: 56px;
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+    z-index: 100;
+    animation: deliver 5s;
+    animation-delay: 2s;
+  }
+}
+
+@keyframes deliver {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 110%;
   }
 }
 
@@ -223,23 +247,3 @@ body {
   }
 }
 
-.icon-delivery {
-  height: 80px;
-  position: fixed;
-  top: 80px;
-  left: -150px;
-  z-index: 100;
-  @media (min-width: 769px) {
-    animation: deliver 5s;
-    animation-delay: 2s;
-  }
-}
-
-@keyframes deliver {
-  0% {
-    left: -100px;
-  }
-  100% {
-    left: 110%;
-  }
-}
