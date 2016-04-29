@@ -222,3 +222,22 @@ body {
     color: #FFF !important;
   }
 }
+
+.icon-delivery {
+  height: 80px;
+  position: fixed;
+  top: 80px;
+  left: -150px;
+  z-index: 100;
+  animation: deliver 5s;
+  animation-delay: 2s;
+}
+
+@keyframes deliver {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 110%;
+  }
+}
