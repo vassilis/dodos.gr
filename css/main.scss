@@ -229,8 +229,10 @@ body {
   top: 80px;
   left: -150px;
   z-index: 100;
-  animation: deliver 5s;
-  animation-delay: 2s;
+  @media (min-width: 769px) {
+    animation: deliver 5s;
+    animation-delay: 2s;
+  }
 }
 
 @keyframes deliver {
