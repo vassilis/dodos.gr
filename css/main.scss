@@ -54,18 +54,17 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.topbar {
+.infobar {
   background: $grey-color-dark; 
   color: #FFF;
   text-align: center;
-  padding: 5px;
-  font-family: $comp-font-family;
-  font-size: 1.1em;
+  padding: 7px;
+  font: bold 1.1em/1 $base-font-family;
 }
 
 .site-header {
   background-color: $grey-color-light;
-  border-bottom: 1px $grey-color-dark solid;
+  border-top: 3px $grey-color-dark solid;
   color: $grey-color-dark;
   .container {
     position: relative;
