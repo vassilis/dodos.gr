@@ -78,20 +78,21 @@ body {
     margin-top: 10px;
     font-size: .9em;
   }
-  &::after {
-    content: "";
-    display: block;
-    background: url("/img/193650.svg");
-    background-size: 100%;
-    width: 80px;
-    height: 56px;
-    position: absolute;
-    bottom: 0;
-    left: -150px;
-    z-index: 100;
-    animation: deliver 5s;
-    animation-delay: 2s;
-  }
+  
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   background: url("/img/193650.svg");
+  //   background-size: 100%;
+  //   width: 80px;
+  //   height: 56px;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: -150px;
+  //   z-index: 100;
+  //   animation: deliver 5s;
+  //   animation-delay: 2s;
+  // }
 }
 
 @keyframes deliver {
