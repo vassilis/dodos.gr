@@ -2,11 +2,9 @@
 title: Κρέπες Χαλκίδα by Dodos
 email: vas.terzo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Το καλύτερο στέκι στη Χαλκίδα για κρέπες, σάντουιτς, βάφλες, burgers. Delivery από τις 12 το πρωί μέχρι τις 3 τα ξημερώματα χωρίς ελάχιστη παραγγελία! Πολλές προσφορές!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://vassilis.github.io" # the base hostname & protocol for your site
+url: "http://dodos.gr" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
