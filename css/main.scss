@@ -243,9 +243,13 @@ body {
 
 .app-stores {
   margin-top: 40px;
+  img {
+    max-width: 300px;
+  }
 }
 
-.shopilab {
+.small-print {
+  line-height: 1.8;
   font-size: .8em;
   margin-top: 100px;
   a {
