@@ -58,8 +58,8 @@ body {
   background: $grey-color-dark; 
   color: #FFF;
   text-align: center;
-  padding: 7px;
-  font: bold 1.1em/1 $base-font-family;
+  padding: 10px 7px;
+  font: bold 1em/1 $base-font-family;
 }
 
 .site-header {
@@ -111,7 +111,8 @@ body {
   top: 30px;
   right: 20px;
   background: $red-color;
-  padding: 10px 20px;
+  padding: 15px 30px 20px;
+  line-height: 1;
   cursor: pointer;
   color: #FFF;
   border-radius: 10px;
@@ -125,6 +126,7 @@ body {
   }
   small {
     display: block;
+    margin-top: 5px;
     font-size: .9em;
   }
   @media (max-width: 768px) {
