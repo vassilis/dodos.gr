@@ -4,11 +4,11 @@
 @charset "utf-8";
 
 @import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
-@import url("//fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=greek,latin");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,greek");
 @import url("{{ '/vendor/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css' | prepend: site.baseurl }}");
 
 // Our variables
-$base-font-family: "Comfortaa", sans-serif;
+$base-font-family: "Open Sans", sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
