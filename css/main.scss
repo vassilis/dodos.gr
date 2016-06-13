@@ -18,8 +18,9 @@ $comp-font-family: "Ubuntu Condensed", sans-serif;
 $spacing-unit:     30px;
 
 $text-color:       #FFF;
-$brand-color:      #C0281C;
 $red-color:        #C0281C;
+$brand-color:      $red-color;
+$brand-primary:    $red-color;
 $grey-color:       #4D4D4D;
 $grey-color-light: #DBE3E2;
 $grey-color-dark:  #1A1A1A;
@@ -58,8 +59,8 @@ body {
   background: $grey-color-dark; 
   color: #FFF;
   text-align: center;
-  padding: 10px 7px;
-  font: bold 1em/1 $base-font-family;
+  padding: 15px 7px;
+  font: bold 1.2em/1 $base-font-family;
 }
 
 .site-header {
@@ -115,7 +116,7 @@ body {
   line-height: 1;
   cursor: pointer;
   color: #FFF;
-  border-radius: 10px;
+  border-radius: .3rem;
   box-shadow: 0 3px 3px lighten($grey-color-dark, 40%);
   text-shadow: 0 1px 0 #333;
   &:hover {
@@ -136,7 +137,7 @@ body {
 }
 
 .slides {
-  height: 500px;
+  height: 550px;
   background: url("{{ '/img/slides3.jpg' | prepend: site.baseurl }}") 50% 50% $grey-color-dark;
   background-size: cover;
   position: relative;
@@ -170,7 +171,9 @@ body {
 }
 
 .newsletter-form {
-  padding: 50px;
+  padding: 30px;
+  border-radius: .3rem;
+  margin-bottom: 50px;
   background: $grey-color; 
   color: #FFF;
   label {
@@ -179,7 +182,7 @@ body {
 }
 
 .offers {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   .offer {
     margin: 50px 0 60px;
@@ -198,6 +201,14 @@ body {
   }
 }
 
+.phone-offer {
+  margin-top: 10px;
+  border: 1px $grey-color solid;
+  padding: 15px;
+  height: 150px;
+  border-radius: .3rem;
+}
+
 .thumbs {
   text-align: center;
   img {
@@ -207,6 +218,11 @@ body {
   @media (max-width: 768px) {
     display: none;
   }
+}
+
+h2.thumbs-middle {
+  margin: 30px 0;
+  line-height: 1.5;
 }
 
 .alert-info {
@@ -233,26 +249,29 @@ body {
 .social {
   margin-top: 50px;
   .btn {
-    background: $red-color;
-    border: 0;
-    margin: 10px;
-    padding: 10px 30px;
-    min-width: 250px;
-    &:hover {
-      background: darken($red-color, 10%);
-    }
+    margin-bottom: 10px;
+  }
+}
+
+.btn-primary {
+  background: $red-color !important;
+  border: 0;
+  padding: 20px;
+  font-size: 1.4em;
+  &:hover {
+    background: darken($red-color, 10%) !important;
   }
 }
 
 .app-stores {
   font-size: 1.5em;
-  margin-top: 40px;
+  margin-top: 50px;
   border: 1px $grey-color solid;
-  border-radius: 4px;
+  border-radius: .3rem;
   padding: 15px;
   img {
     height: 80px;
-    margin: 0 10px;
+    margin: 10px;
   }
 }
 

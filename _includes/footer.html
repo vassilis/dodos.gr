@@ -3,29 +3,32 @@
 <footer class="site-footer">
 
   <div class="container text-xs-center">
+
     <p class="alert alert-info">
       <img src="{{ '/img/pin.png' | prepend: site.baseurl }}" alt="Dodos" class="pin"><br>
       Πάρε την παρέα σου κι ελάτε να φάτε στο καλύτερο στέκι της πόλης.<br>
       Θα μας βρείτε στην οδό Φαρμακίδου 20, στην παραλία της Χαλκίδας, δίπλα στην πλατεία του Αγίου Νικολάου.
     </p>
+
+    {% include newsletter-form.html %}
+    
     <div class="social">
-      <a target="_blank" class="btn btn-lg btn-primary" href="https://www.facebook.com/Dodos-creperie-1400896283479414/">Like Dodos FB Page</a>
-      <a target="_blank" class="btn btn-lg btn-primary" href="https://www.facebook.com/groups/144570275685325/">Join Dodos FB Group</a>
+      <div class="row">
+        <div class="col-md-6">
+          <a target="_blank" class="btn btn-lg btn-primary btn-block" href="https://www.facebook.com/Dodos-creperie-1400896283479414/">Like Dodos FB Page</a>
+        </div>
+        <div class="col-md-6">
+          <a target="_blank" class="btn btn-lg btn-primary btn-block" href="https://www.facebook.com/groups/144570275685325/">Join Dodos FB Group</a>
+        </div>
+      </div>
+      <p class="small-print">
+        Οι επωνυμίες Google Play και Android καθώς και το λογότυπο Google Play αποτελούν εμπορικά σήματα της Google Inc.<br>
+        Η σελίδα σχεδιάστηκε από την <a href="http://shopilab.com" target="_blank">Shopilab - Εφαρμογές Ηλεκτρονικού Εμπορίου
+        </p>
+      </div>
     </div>
-    <p class="app-stores">
-      Έχεις smart-phone ή tablet;<br><br>
-      <a href="https://play.google.com/store/apps/details?id=com.shopilab.dodos" target="_blank">
-        <img src="/img/google-play.svg.png" alt="Google PLay">
-      </a>
-      <a href="https://itunes.apple.com/gr/app/dodos/id1122430182" target="_blank">
-        <img src="/img/app-store.svg.png" alt="App Store">
-      </a><br><br>
-      Κατέβασε την εφαρμογή μας και παράγγειλε ακόμα πιο εύκολα!
-    </p>
-    <p class="small-print">
-      Οι επωνυμίες Google Play και Android καθώς και το λογότυπο Google Play αποτελούν εμπορικά σήματα της Google Inc.<br>
-      Η σελίδα σχεδιάστηκε από την <a href="http://shopilab.com" target="_blank">Shopilab - Εφαρμογές Ηλεκτρονικού Εμπορίου
-    </p>
   </div>
 
 </footer>
+
+<script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async ></script>
