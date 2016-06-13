@@ -237,6 +237,7 @@ body {
     border: 0;
     margin: 10px;
     padding: 10px 30px;
+    min-width: 250px;
     &:hover {
       background: darken($red-color, 10%);
     }
@@ -244,9 +245,14 @@ body {
 }
 
 .app-stores {
+  font-size: 1.5em;
   margin-top: 40px;
+  border: 1px $grey-color solid;
+  border-radius: 4px;
+  padding: 15px;
   img {
-    max-width: 300px;
+    height: 80px;
+    margin: 0 10px;
   }
 }
 
