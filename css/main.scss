@@ -59,8 +59,8 @@ body {
   background: $grey-color-dark; 
   color: #FFF;
   text-align: center;
-  padding: 15px 7px;
-  font: bold 1.2em/1 $base-font-family;
+  padding: 10px 15px;
+  font: bold 1.2em/2 $base-font-family;
 }
 
 .site-header {
@@ -141,9 +141,6 @@ body {
   background: url("{{ '/img/slides3.jpg' | prepend: site.baseurl }}") 50% 50% $grey-color-dark;
   background-size: cover;
   position: relative;
-  @media (max-width: 768px) {
-    display: none;
-  }
 }
 
 .phones {
@@ -215,9 +212,6 @@ body {
     max-width: 100%;
     margin: 20px 0;
   }
-  @media (max-width: 768px) {
-    display: none;
-  }
 }
 
 h2.thumbs-middle {
@@ -258,6 +252,7 @@ h2.thumbs-middle {
   border: 0;
   padding: 20px;
   font-size: 1.4em;
+  white-space: inherit;
   &:hover {
     background: darken($red-color, 10%) !important;
   }
