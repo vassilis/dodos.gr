@@ -56,7 +56,7 @@ body {
 }
 
 .infobar {
-  background: $grey-color-dark; 
+  background: $grey-color-dark;
   color: #FFF;
   text-align: center;
   padding: 10px 15px;
@@ -79,7 +79,7 @@ body {
     margin-top: 10px;
     font-size: .9em;
   }
-  
+
   // &::after {
   //   content: "";
   //   display: block;
@@ -138,7 +138,7 @@ body {
 
 .slides {
   height: 550px;
-  background: url("{{ '/img/slides3.jpg' | prepend: site.baseurl }}") 50% 50% $grey-color-dark;
+  background: url("{{ '/img/crepe-on-fork.jpeg' | prepend: site.baseurl }}") 50% 50% $grey-color-dark;
   background-size: cover;
   position: relative;
 }
@@ -171,7 +171,7 @@ body {
   padding: 30px;
   border-radius: .3rem;
   margin-bottom: 50px;
-  background: $grey-color; 
+  background: $grey-color;
   color: #FFF;
   label {
     font-weight: 700;
