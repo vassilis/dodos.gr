@@ -1,0 +1,35 @@
+
+
+<div class="alert alert-info">
+  <div class="container text-xs-center">
+    <img src="{{ '/img/pin.png' | prepend: site.baseurl }}" alt="Dodos" class="pin"><br>
+    Πάρε την παρέα σου κι ελάτε να φάτε στο καλύτερο στέκι της πόλης.<br>
+    Θα μας βρείτε στην οδό Ερμού 2 και Φαρμακίδου, στην παραλία της Χαλκίδας, δίπλα στην πλατεία του Αγίου Νικολάου.
+  </div>
+</div>
+
+<div style='overflow:hidden;height:400px;width:100%;'>
+  <div id='gmap_canvas' style='height:400px;width:100%;'></div>
+</div>
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<script type='text/javascript'>
+
+  function init_map(){
+    var myOptions = {
+      zoom: 21,
+      center: new google.maps.LatLng(38.4653257,23.592910200000006),
+      mapTypeId: google.maps.MapTypeId.SATELLITE
+    };
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.4653257,23.592910200000006)});
+    infowindow = new google.maps.InfoWindow({content:'<strong>dodos</strong><br>Ερμού 2 και Φαρμακίδου, Χαλκίδα<br>'});
+    google.maps.event.addListener(marker, 'click', function(){
+      infowindow.open(map,marker);
+    });
+    infowindow.open(map,marker);
+  }
+
+  google.maps.event.addDomListener(window, 'load', init_map);
+
+</script>

@@ -21,9 +21,9 @@ $text-color:       #FFF;
 $red-color:        #C0281C;
 $brand-color:      $red-color;
 $brand-primary:    $red-color;
-$grey-color:       #4D4D4D;
+$grey-color:       #444;
 $grey-color-light: #DBE3E2;
-$grey-color-dark:  #1A1A1A;
+$grey-color-dark:  #222;
 
 // Width of the content area
 $content-width:    800px;
@@ -153,23 +153,24 @@ body {
 }
 
 .newsletter-form {
-  padding: 30px;
   border-radius: .3rem;
-  margin-bottom: 50px;
-  background: $grey-color;
-  color: #FFF;
+  color: #333;
+  background-color: #FFF;
   label {
     font-weight: 700;
+  }
+  .container {
+    padding: 100px 0;
+    background: url("/img/email.jpg") 100% 50% no-repeat #FFF;
   }
 }
 
 .offers {
-  padding-top: 20px;
-  padding-bottom: 50px;
   .offer {
-    margin: 50px 0 60px;
+    margin-bottom: 50px;
   }
   h2 {
+    margin-top: 0;
     margin-bottom: 25px;
   }
   dt {
@@ -183,25 +184,88 @@ body {
   }
 }
 
-.phone-offer {
-  margin-top: 10px;
-  border: 1px $grey-color solid;
-  padding: 15px;
-  height: 150px;
-  border-radius: .3rem;
+.offers-1 {
+  background: #FFF;
+  color: #333;
+  .container {
+    padding: 100px 0;
+    background: url("/img/wow.jpg") 100% 100% no-repeat;
+    background-size: 55%;
+  }
 }
 
-.thumbs {
-  text-align: center;
+.offers-2 {
+  .container {
+    padding: 100px 0;
+  }
+}
+
+.phone-offer {
+  margin-top: 30px;
+  color: #333;
+  padding: 400px 15px 15px;
+  border-radius: .3rem;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  div {
+    border-radius: .3rem;
+    padding: 10px;
+    display: block;
+    margin: -10px;
+    background: $red-color;
+    color: #FFF;
+  }
+  strong {
+    font-size: 1.3em;
+  }
+  .huge {
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    font-size: 10em;
+    color: #FFF;
+    font-weight: bold;
+  }
+}
+
+.phone-offer-1 {
+  background-image: url("/img/choco-sm.jpg");
+}
+
+.phone-offer-2 {
+  background-image: url("/img/coke2.jpg");
+}
+
+.phone-offer-3 {
+  background-image: url("/img/crepe-closeup.jpg");
+}
+
+h2 {
+  font: 3em/1 $comp-font-family;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-family: $comp-font-family;
+}
+
+.huge {
+  font-size: 4em;
+}
+
+.featured {
+  padding: 100px 0;
   img {
     max-width: 100%;
     margin: 20px 0;
   }
-}
-
-h2.thumbs-middle {
-  margin: 30px 0;
-  line-height: 1.5;
+  p {
+    font-size: 1.3em;
+  }
 }
 
 .alert-info {
@@ -209,6 +273,18 @@ h2.thumbs-middle {
   background: $grey-color;
   border: 0;
   color: #FFF;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+#gmap_canvas {
+  color: #333;
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  img {
+    max-width: none!important;
+    background: none!important;
+  }
 }
 
 .text-danger {
@@ -216,7 +292,15 @@ h2.thumbs-middle {
 }
 
 .site-footer {
-  padding-bottom: 50px;
+  padding: 100px 0;
+  font-size: .8em;
+  line-height: 1.8;
+  .footer-last {
+    margin-top: 100px;
+  }
+  a {
+    color: #FFF !important;
+  }
 }
 
 .pin {
@@ -226,8 +310,18 @@ h2.thumbs-middle {
 }
 
 .social {
-  margin-top: 50px;
-  .btn {
+  padding: 100px 0;
+  font-weight: bold;
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  background: url("/img/social.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  a {
+    text-align: center;
+    display: block;
+  }
+  img {
+    border: 1px solid #000;
     margin-bottom: 10px;
   }
 }
@@ -244,23 +338,17 @@ h2.thumbs-middle {
 }
 
 .app-stores {
-  font-size: 1.5em;
-  margin-top: 50px;
-  border: 1px $grey-color solid;
-  border-radius: .3rem;
-  padding: 15px;
-  img {
-    height: 80px;
-    margin: 10px;
+  // background: #FFF;
+  color: #333;
+  // font-size: 1.5em;
+  // padding: 100px 0;
+  p {
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
-}
-
-.small-print {
-  line-height: 1.8;
-  font-size: .8em;
-  margin-top: 100px;
-  a {
-    color: #FFF !important;
+  img {
+    height: 50px;
+    margin-right: 15px;
   }
 }
 
