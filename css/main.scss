@@ -94,9 +94,6 @@ body {
 .btn-menu {
   display: block;
   text-align: center;
-  position: absolute;
-  top: 32px;
-  right: 20px;
   background: $red-color;
   padding: 22px 30px 26px;
   line-height: 1;
@@ -132,7 +129,6 @@ body {
   background: $red-color;
   color: #FFF;
   font-size: 1.8em;
-  text-align: center;
   padding: 20px;
   line-height: 1;
   border: $grey-color-dark solid;
@@ -141,6 +137,10 @@ body {
     display: block;
     font-size: .6em;
     margin-bottom: 15px;
+  }
+  a {
+    color: #FFF !important;
+    white-space: nowrap;
   }
   .whatsup {
     padding-left: 100px;
@@ -160,7 +160,8 @@ body {
     font-weight: 700;
   }
   .container {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: url("/img/email.jpg") 100% 50% no-repeat #FFF;
   }
 }
@@ -188,22 +189,27 @@ body {
   background: #FFF;
   color: #333;
   .container {
-    padding: 100px 0;
-    background: url("/img/wow.jpg") 100% 100% no-repeat;
-    background-size: 55%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (min-width: 1000px) {
+      background: url("/img/wow.jpg") 100% 100% no-repeat;
+      background-size: 55%;
+    }
   }
 }
 
 .offers-2 {
   .container {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
 .phone-offer {
+  height: 400px;
   margin-top: 30px;
   color: #333;
-  padding: 400px 15px 15px;
+  padding: 15px;
   border-radius: .3rem;
   background-color: #FFF;
   background-repeat: no-repeat;
@@ -212,6 +218,10 @@ body {
   position: relative;
   overflow: hidden;
   div {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
     border-radius: .3rem;
     padding: 10px;
     display: block;
@@ -323,6 +333,7 @@ h2 {
   img {
     border: 1px solid #000;
     margin-bottom: 10px;
+    max-width: 100%;
   }
 }
 
@@ -349,6 +360,7 @@ h2 {
   img {
     height: 50px;
     margin-right: 15px;
+    margin-bottom: 5px;
   }
 }
 

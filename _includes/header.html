@@ -1,13 +1,20 @@
 
 
 <header class="site-header">
-
   <div class="container">
-    <div class="logo">
-      <img src="{{ '/img/logo.svg' | prepend: site.baseurl }}">
-      <small class="tagline">Η αγαπημένη κρεπερί της Χαλκίδας</small>
-    </div>
-    {% include btn-menu.html %}
-  </div>
+    <div class="row">
 
+      <div class="col-md-6">
+        <div class="logo">
+          <img src="{{ '/img/logo.svg' | prepend: site.baseurl }}">
+          <small class="tagline">Η αγαπημένη κρεπερί της Χαλκίδας</small>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        {% include btn-menu.html %}
+      </div>
+
+    </div>
+  </div>
 </header>
