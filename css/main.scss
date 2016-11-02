@@ -5,7 +5,7 @@
 
 @import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,greek");
-@import url("{{ '/vendor/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css' | prepend: site.baseurl }}");
+@import url("{{ '/vendor/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.css' | prepend: site.baseurl }}");
 
 // Our variables
 $base-font-family: "Open Sans", sans-serif;
