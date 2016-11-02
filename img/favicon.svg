@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="33.866665mm"
-   height="45.155556mm"
-   viewBox="0 0 119.99999 160"
+   width="512"
+   height="512"
+   viewBox="0 0 511.99999 512"
    id="svg3359"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="favicon.svg">
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/vassilis/Source/dodos.gr/img/favicon.512.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3361" />
   <sodipodi:namedview
@@ -26,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="989.28571"
+     inkscape:cx="513.57143"
      inkscape:cy="188.57142"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -39,7 +42,8 @@
      inkscape:window-height="1176"
      inkscape:window-x="45"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="px" />
   <metadata
      id="metadata3364">
     <rdf:RDF>
@@ -56,9 +60,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(614.28571,-560.93362)">
+     transform="translate(614.28571,-208.93362)">
     <g
-       transform="matrix(1.25,0,0,1.25,39.323298,-1367.322)"
+       transform="matrix(3.6428571,0,0,3.6428571,1371.6605,-5387.6971)"
        id="g4512"
        style="fill:#cc0000">
       <path
