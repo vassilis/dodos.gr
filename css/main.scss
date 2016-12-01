@@ -272,6 +272,7 @@ h2 {
   img {
     max-width: 100%;
     margin: 15px 0;
+    border-radius: .3rem;
   }
   p {
     font-size: 1.3em;
@@ -329,11 +330,14 @@ h2 {
   a {
     text-align: center;
     display: block;
+    color: #FFF;
+    font-size: 1.6em;
   }
   img {
-    border: 1px solid #000;
+    border-radius: .3rem;
     margin-bottom: 10px;
     max-width: 100%;
+    max-height: 200px;
   }
 }
 
